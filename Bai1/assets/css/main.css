@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+img,
+a,
+button,
+input,
+textarea,
+section {
+  font-family: inherit;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bxSlider {
+  padding-top: 100px;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .bxSlider {
+    width: 100%;
+  }
+}
+.bxSlider__wrap {
+  position: relative;
+  margin: 0 30px;
+}
+.bxSlider__list {
+  display: flex;
+  max-height: 450px;
+}
+.bxSlider__thumb {
+  display: none;
+  position: relative;
+  width: 600px;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  background: #fff;
+}
+.bxSlider__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.bxSlider__img__title {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-transform: capitalize;
+}
+.bxSlider__active {
+  display: block;
+}
+.bxSlider__active .bxSlider__img {
+  filter: grayscale(0%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(102, 102, 102);
+}
+.dot__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 20px;
+}
+.dot:hover, .dot__active {
+  cursor: pointer;
+  background-color: #000;
+}
+
+.bx-controls-direction {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+
+.bx-prev,
+.bx-next {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 17px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bx-prev {
+  margin-left: 10px;
+  background: url(/Bai1/assets/img/controls.png) no-repeat 1px 8px;
+  z-index: 100;
+}
+
+.bx-next {
+  margin-right: 10px;
+  background: url(/Bai1/assets/img/controls.png) no-repeat -42px -32px;
+  z-index: 100;
+}

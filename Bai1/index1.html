@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main1.css">
+    <title>Image Slider</title>
+</head>
+
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/img/coffee1.jpg" alt="Image 1">
+                <div class="caption">Caption 1</div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/coffee2.jpg" alt="Image 2">
+                <div class="caption">Caption 2</div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/coffee3.jpg" alt="Image 3">
+                <div class="caption">Caption 3</div>
+            </div>
+        </div>
+        <div class="bx-controls-direction">
+            <a class="bx-prev" id="prev">Prev</a>
+            <a class="bx-next" href="#">Next</a>
+        </div>
+        <div class="dots-container">
+            <span onclick="currentSlide(1)" class="dot"></span>
+            <span onclick="currentSlide(2)" class="dot"></span>
+            <span onclick="currentSlide(3)" class="dot"></span>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
